@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+/*---------------main----------------*/
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(./asset/header.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+/*---------------navbar---------------*/
+.navbar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, .7);
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    float: left;
+    padding: 15px 0;
+    color: #744F3B;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    padding: 25px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li a:hover{
+    background-color: #744F3B;
+    color: #fff;
+}
+
+.active{
+    background-color: #744F3B;
+    color: #fff;
+}
+
+
+/*-------------greeting-------------*/
+.greeting{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.max-width{
+    width: 100%;
+    padding: 0 90px;
+    margin: auto;
+}
+
+.greeting .max-width{
+    margin: auto 0 auto 30px;
+}
+
+.greeting .greet-content .text-1{
+    color:#ffdbae;
+    font-size: 50px;
+}
+
+.greeting .greet-content .text-2{
+    color: #fdfff5;
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*--------------sosmed------------*/
+.sosmed{
+    width: 100%;
+    margin: 10px 0;
+    float: inline-end;
+}
+
+.sosmed ul{
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed ul li {
+    display: inline-block;
+}
+
+.sosmed ul li a{
+    display: inline-block;
+    padding: 10px 5px;
+    color: #744F3B;
+}
+
+.sosmed p {
+    color: #744F3B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+
+/*------------------home-------------------*/
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url(./asset/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.home-content {
+    width: 70%;
+    margin: auto;
+}
+
+.home-content p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.home-content h1{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+
+.h1 {
+    color: #ffdbae;
+}
+
+.EEPIS {
+    font-style: italic;
+}
+
+.home-content a{
+    color: #744F3B;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 4px;
+    border: 2px double #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 3px 3px #ffdbae;
+}
+
+.home-content a:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px #fff;
+}
+
+
+/*------about--------*/
+.about {
+    width: 100%;
+    height: 100vh;
+    background: url(./asset/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.about img {
+    height: 200px;
+    border: 3px double #bec1b3;
+    border-radius: 10%;
+    box-shadow: 5px 4px #ffe7ce;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.aboutme {
+    width: 320px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.aboutme h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 3px 3px #bec1b3;
+}
+
+.me {
+    color: #ffdbae;
+}
+
+.aboutme p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+}
+
+/*--------potofolio---------*/
+.porto {
+    width: 100%;
+    height: 100vh;
+    background: url(./asset/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.porto-content h1 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    text-shadow: 3px 3px #bec1b3;
+}
+
+.porto .project .card{
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 10px;
+}
+.porto .project .card:hover{
+    background:  rgb(255, 246, 210);
+}
+.porto .project .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.porto .project .card:hover .box{
+    transform: scale(1.05);
+}
+.porto .project .card a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #744F3B;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.porto .project .card:hover a{
+    color: #b7886f;
+}
+
+.porto .project .card p{
+    font-size: 13px;
+    margin: 7px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.porto .project .card img{
+    height: 150px;
+    width: 300px;
+    border-radius: 8px;
+    border: 4px solid  rgb(122, 82, 49);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.porto .project .card:hover img{
+    border-color: #fff;
+}
+
+/*----------contact---------*/
+.contact {
+    width: 100%;
+    height: 85vh;
+    background: url(./asset/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contact h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;    
+    text-shadow: 3px 3px #bec1b3;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-content .col-3 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    margin: 15px auto;
+}
+
+.icon img {
+    width: 31px;
+    padding-top: 18px;
+}
+.contact-content a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: smaller;
+}
+
+.contact-content a:hover {
+    color: #ffdbae;
+}
